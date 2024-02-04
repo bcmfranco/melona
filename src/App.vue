@@ -1,11 +1,13 @@
 <template>
   <div>
+
+    <h1>Melonas world</h1>
+
     <MelonasGreeting />
   </div>
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import MelonasGreeting from './components/MelonasGreeting.vue'
 
 
