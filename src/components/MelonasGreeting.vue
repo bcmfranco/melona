@@ -12,7 +12,7 @@
   let showGreeting = ref(false);
   
   const generateGreeting = () => {
-    greeting.value = 'hola melona 😘';
+    greeting.value = 'hola melona';
     showGreeting.value = true;
   
     setTimeout(() => {
@@ -30,7 +30,7 @@
   }
   
   .mdc-button {
-    background-color: #ffffff;
+    background-color: var(--lemon);
     color: #fff;
     border: none;
     border-radius: 4px;

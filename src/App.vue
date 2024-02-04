@@ -1,9 +1,7 @@
 <template>
-  <div>
-
-    <h1>melona's world</h1>
-
-    <MelonasGreeting />
+  <div id="world">
+      <h1>melona's world</h1>
+      <MelonasGreeting />
   </div>
 </template>
 
@@ -18,24 +16,20 @@ let count = 0;
 
 <style scoped>
 
+:root {
+  --lemon: #fcfff0;
+}
+
 @font-face {
   font-family: 'Marcellus';
   src: url('assets/Marcellus-Regular.ttf') format('truetype');
 }
 
+#app{
+  background-color: red;
+}
+
 *{
   font-family: Marcellus;
-}
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>
