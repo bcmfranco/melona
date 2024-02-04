@@ -1,14 +1,15 @@
 <template>
   <div>
 
-    <h1>Melonas world</h1>
+    <h1>melona's world</h1>
 
     <MelonasGreeting />
   </div>
 </template>
 
 <script setup>
-import MelonasGreeting from './components/MelonasGreeting.vue'
+import MelonasGreeting from './components/MelonasGreeting.vue';
+
 
 
 let count = 0;
@@ -16,6 +17,15 @@ let count = 0;
 </script>
 
 <style scoped>
+
+@font-face {
+  font-family: 'Marcellus';
+  src: url('assets/Marcellus-Regular.ttf') format('truetype');
+}
+
+*{
+  font-family: Marcellus;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

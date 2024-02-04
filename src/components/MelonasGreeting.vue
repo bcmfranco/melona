@@ -12,7 +12,7 @@
   let showGreeting = ref(false);
   
   const generateGreeting = () => {
-    greeting.value = 'Hola Melona';
+    greeting.value = 'hola melona 😘';
     showGreeting.value = true;
   
     setTimeout(() => {
