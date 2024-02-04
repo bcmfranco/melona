@@ -1,31 +1,40 @@
 <template>
-  <div class="card">
-    <button type="button" @click="generateGreeting">Saludar</button>
-    <p>{{ greeting }}</p>
-  </div>
-</template>
-
-<script setup>
-import { ref } from 'vue'
-
-let greeting = ref('');
-let showGreeting = ref(false);
-let timerId;
-
-const generateGreeting = () => {
-  greeting.value = '¡Hola Melona!';
-  showGreeting.value = true;
-
-  clearTimeout(timerId);
-  timerId = setTimeout(() => {
-    showGreeting.value = false;
-  }, 2000);
-};
-</script>
-
-<style scoped>
-    .read-the-docs {
-    color: #888;
+    <div class="card">
+      <button type="button" @click="generateGreeting">🍈</button>
+      <p v-show="showGreeting">{{ greeting }}</p>
+    </div>
+  </template>
+  
+  <script setup>
+  import { ref } from 'vue'
+  
+  let greeting = ref('');
+  let showGreeting = ref(false);
+  
+  const generateGreeting = () => {
+    greeting.value = '¡Hola Melona!';
+    showGreeting.value = true;
+  
+    setTimeout(() => {
+      showGreeting.value = false;
+    }, 2000);
+  };
+  </script>
+  
+  <style scoped>
+    .card {
+      text-align: center;
     }
-    
-</style>
+  
+    button {
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+  
+    p {
+      font-size: 18px;
+      color: green;
+    }
+  </style>
+  
