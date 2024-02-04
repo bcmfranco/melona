@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Marcellus';
+    src: url('Marcellus-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('Anton-Regular.ttf') format('truetype');
+}
